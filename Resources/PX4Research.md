@@ -1,3 +1,5 @@
+- Maoz
+
 ## Primary Library/Software: PX4
 
 The recommended hardware is pixhawk.
@@ -39,3 +41,4 @@ Trigger Interface Backends: Use 1, GPIO interface, can be used to trigger most c
     - Combining with OpenCV
     - https://mavsdk.mavlink.io/main/en/index.html
 - QGroundControl
+- Continue PX4 Research out of "Getting Started"
