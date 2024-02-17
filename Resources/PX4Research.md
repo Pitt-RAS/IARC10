@@ -41,4 +41,8 @@ Trigger Interface Backends: Use 1, GPIO interface, can be used to trigger most c
     - Combining with OpenCV
     - https://mavsdk.mavlink.io/main/en/index.html
 - QGroundControl
+    - Will probably need to be downloaded on Jetson
 - Continue PX4 Research out of "Getting Started"
+- How to connect to Jetson without wifi
+    - Jetson with Flight Controller
+    - Router, local hotspot, etc
