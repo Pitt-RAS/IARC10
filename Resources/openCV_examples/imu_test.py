@@ -23,4 +23,6 @@ while True:
     accel = get_accel_data(frame[0].as_motion_frame().get_motion_data())
     print('accelerometer', accel)
     print('gyroscope', gyro)
-    
+
+
+
