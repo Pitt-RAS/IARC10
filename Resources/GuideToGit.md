@@ -23,3 +23,13 @@ For the sake of organization, all PRs (Pull Requests) should have 3 parts:
 
 And then wait for someone to approve your PR, and then merge!
     (If you have merge conflicts, that's a seperate issue)
+
+# Merging Conflicts or Issues when pushing (PEOPLE WHO FORGOT TO PULL -- that means you :) ) 
+Remember to check if you are on the correct branch by using "git checkout" and "git status" for any changes
+
+"git stash"                 - would safe your current changes
+"git pull"                  - pull the current GitHub version of the code
+"git stash pop"             - put the changed version of you code back 
+"git add ___"               - the "___" is for the files and if you use "." for all files and if not type the file name
+"git commit -m "_____""     - commit your changes 
+"git push"                  - pushes your code to GitHub
