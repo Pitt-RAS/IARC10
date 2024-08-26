@@ -33,3 +33,9 @@ Remember to check if you are on the correct branch by using "git checkout" and "
 "git add ___"               - the "___" is for the files and if you use "." for all files and if not type the file name
 "git commit -m "_____""     - commit your changes 
 "git push"                  - pushes your code to GitHub
+
+# Setting up a requirement for PRs
+1. Open Settings -> Branches
+2. Add a new Branch Protection Rule
+3. In "Branch Name Pattern", put the name of the branch you want to protect
+4. Click on "Require a pull request before merging"
