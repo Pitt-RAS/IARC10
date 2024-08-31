@@ -4,7 +4,7 @@ from pytesseract import Output
  
 cap = cv2.VideoCapture(1)
 cap.set(cv2.CAP_PROP_BUFFERSIZE, 1)
- 
+# etsetsiofhsoidfhoihfoi 
 while True:
     # Capture frame-by-frame
     ret, frame = cap.read()
