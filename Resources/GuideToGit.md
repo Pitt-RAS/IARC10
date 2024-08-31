@@ -1,14 +1,16 @@
 # Before Making Changes
-Pull on whichever branch you are branching off of
+Pull on whichever branch you are branching off of ("git pull")
 
-Type "git checkout -b *name*", where *name* is the name of the branch
+Type "git checkout -b *name*", where *name* is the name of the new branch
+- The same command is used to switch between branches, just leave the "-b" off if the target is pre-existing
+- In order to check which branch you are on, use "git branch"
 
 # Do Your Changes
 
 # After completing them
 Add all changes to Git (git add -A or using VSCode UI)
 
-git push
+git push (This adds the commits to the remote repo, committing itself only leaves it on the local one)
 
 Switch to Github, and there are two possibilities from there:
     You see a goldenish banner at the top saying your branch has recent changes & giving an option to make a pull request
@@ -22,7 +24,7 @@ For the sake of organization, all PRs (Pull Requests) should have 3 parts:
     3. Proof that the feature/bugfix works
 
 And then wait for someone to approve your PR, and then merge!
-    (If you have merge conflicts, that's a seperate issue)
+    (If you have merge conflicts, that's a seperate issue, that can be fixed in github)
 
 # Merging Conflicts or Issues when pushing (PEOPLE WHO FORGOT TO PULL -- that means you :) ) 
 Remember to check if you are on the correct branch by using "git checkout" and "git status" for any changes
@@ -39,3 +41,9 @@ Remember to check if you are on the correct branch by using "git checkout" and "
 2. Add a new Branch Protection Rule
 3. In "Branch Name Pattern", put the name of the branch you want to protect
 4. Click on "Require a pull request before merging"
+
+# Deleting Old Branches
+*In GitHub*
+- Click on the button right above the code that shows which branch you are on
+- "View All Branches"
+- Trash Icon next to branches
