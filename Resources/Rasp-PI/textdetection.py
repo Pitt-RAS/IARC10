@@ -1,6 +1,5 @@
 import cv2
 import pytesseract
-#from pytesseract import Output
 pytesseract.pytesseract.tesseract_cmd = r'/usr/bin/tesseract'
 from pytesseract import Output
  
