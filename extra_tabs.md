@@ -5,3 +5,7 @@ https://docs.qgroundcontrol.com/master/en/qgc-user-guide/getting_started/downloa
 Strandbeests
 
 https://www.anaconda.com/
+
+https://docs.ros.org/en/humble/index.htmlS
+
+
