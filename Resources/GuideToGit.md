@@ -29,12 +29,12 @@ And then wait for someone to approve your PR, and then merge!
 # Merging Conflicts or Issues when pushing (PEOPLE WHO FORGOT TO PULL -- that means you :) ) 
 Remember to check if you are on the correct branch by using "git checkout" and "git status" for any changes
 
-"git stash"                 - would safe your current changes
-"git pull"                  - pull the current GitHub version of the code
-"git stash pop"             - put the changed version of you code back 
-"git add ___"               - the "___" is for the files and if you use "." for all files and if not type the file name
-"git commit -m "_____""     - commit your changes 
-"git push"                  - pushes your code to GitHub
+- "git stash"                 - would safe your current changes
+- "git pull"                  - pull the current GitHub version of the code
+- "git stash pop"             - put the changed version of you code back 
+- "git add ___"               - the "___" is for the files and if you use "." for all files and if not type the file name
+- "git commit -m "_____""     - commit your changes 
+- "git push"                  - pushes your code to GitHub
 
 # Setting up a requirement for PRs
 1. Open Settings -> Branches
@@ -47,3 +47,24 @@ Remember to check if you are on the correct branch by using "git checkout" and "
 - Click on the button right above the code that shows which branch you are on
 - "View All Branches"
 - Trash Icon next to branches
+
+# GIT Cloning 
+- Windows OS
+    - There is a extention on VS Code for GitHub for cloning or use CRTL + Shift + P and type in "git clone"
+    - Then copy the https: URL from GitHub for cloning
+
+- Linux OS
+    - You would need to clone it through SSH
+    - within your terminal:
+        - "ssh-keygen"             - generates a key pair
+        - "eval "$(ssh-agant -s)"  - activates the agent for linking the your computer to GitHub
+        - "ssh-add ---"            - "---" is your private key name and adds your private key to your device
+        - "cat ---.pub"            - cat shows the content of the files
+        - copy the "ssh..."        - that is the public key that is going into the "SSH and GPG keys" or 
+                                    "key" part in the setting on GitHub
+        - "ssh -T git@github.com"  - is a test ssh command to see if you are connected
+
+    - for you to login in you have to run
+        - git config --global user.name "Your Name"
+        - git config --global user.email "your_email@example.com"
+    - so that you are logged in
