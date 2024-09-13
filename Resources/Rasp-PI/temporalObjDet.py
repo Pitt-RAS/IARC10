@@ -19,13 +19,13 @@ img_initial = cv.cvtColor(img_initial, cv.COLOR_BGR2GRAY)
 temp_cont_frame = np.ones((img_initial.shape[0], img_initial.shape[1]))
 
 classNames = []
-classFile = 'ObjectDetector/coco.names'
+classFile = 'C:/Users/Yun\Documents/Pitt RAS/Aerial/IARC10/Resources/Rasp-PI/coco.names'
 with open(classFile,'rt') as f:
     classNames = f.read().rstrip('\n').split('\n')
 
 #get file paths
-weightsPath = "ObjectDetector/frozen_inference_graph.pb"
-configPath = "ObjectDetector/objectModel.pbtxt"
+weightsPath = "C:/Users/Yun\Documents/Pitt RAS/Aerial/IARC10/Resources/Rasp-PI/frozen_inference_graph.pb"
+configPath = "C:/Users/Yun\Documents/Pitt RAS/Aerial/IARC10/Resources/Rasp-PI/objectModel.pbtxt"
 
 #network object setup
 network = cv.dnn_DetectionModel(weightsPath,configPath)
@@ -52,7 +52,7 @@ def objectDetection(imgReg,ImgIrReg):#takes the convolved image, identifies obje
     indices = cv.dnn.NMSBoxes(bbox,confidences,thresh,nms_threshold)
     if len(classIds) != 0:
         for i in indices:
-            i = i[0]
+            i = i[1]
             box = bbox[i]
             confidence = str(round(confidences[i]*100,2))
             x,y,w,h = box[0],box[1],box[2],box[3]
