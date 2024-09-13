@@ -4,7 +4,7 @@ import numpy as np
 # Load the pre-trained model for object detection
 net = cv.dnn.readNetFromCaffe('/home/ras-1212/Documents/IARC10/Resources/Rasp-PI/new code/MobileNetSSD_deploy.prototxt', '/home/ras-1212/Documents/IARC10/Resources/Rasp-PI/new code/MobileNetSSD_deploy.caffemodel')
 
-# Initialize the video capture object
+# Initialize the video capture objectA
 cap = cv.VideoCapture(1)
 
 while True:
